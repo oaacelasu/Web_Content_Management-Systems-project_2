@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#chart-container {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bubble {
+    fill: #007bff;
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: r 0.2s, fill 0.2s;
+}
+
+.bubble:hover {
+    fill: #ff0000;
+    r: 35;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.unit-price-label {
+    font-size: 12px;
+    text-anchor: middle;
+    fill: white;
+    pointer-events: none; /* Prevents the text from being clickable or focusable */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #ddd;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.crosshair-x,
+.crosshair-y {
+    pointer-events: none; /* Prevents the lines from interfering with mouse events */
+}
+.sidebar {
+    background-color: #f8f9fa;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.banner {
+    /* The image used */
+    background-image:
+            url("https://images.unsplash.com/photo-1587731556938-38755b4803a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80");
+    height: 400px;
+    color: white;
+}

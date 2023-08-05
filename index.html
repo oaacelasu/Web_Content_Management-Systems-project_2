@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Project - Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="banner">
+    <p class="display-1">Top Albums of All Time</p>
+    <p class="display-4">Data Visualization Project</p>
+</div>
+<div class="cards-container mt-5">
+    <!-- Card 1 -->
+    <div class="card" onclick="goToChartPage('bar_chart.html')">
+        <h2>Bar Chart</h2>
+        <p>View the bar chart visualization.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="goToChartPage('pie_chart.html')">
+        <h2>Pie Chart</h2>
+        <p>View the pie chart visualization.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" onclick="goToChartPage('stacked_bar_chart.html')">
+        <h2>Stacked Bar Chart</h2>
+        <p>View the stacked bar chart visualization.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" onclick="goToChartPage('bubble_chart.html')">
+        <h2>Bubble Chart</h2>
+        <p>View the bubble chart visualization.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" onclick="goToChartPage('scatter_plot.html')">
+        <h2>Scatter Plot</h2>
+        <p>View the scatter plot visualization.</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" onclick="goToChartPage('tree_map.html')">
+        <h2>Tree Map</h2>
+        <p>View the tree map visualization.</p>
+    </div>
+</div>
+
+<script>
+    function goToChartPage(url) {
+        window.location.href = url;
+    }
+</script>
+</body>
+
+</html>
