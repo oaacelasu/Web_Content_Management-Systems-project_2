@@ -11,6 +11,8 @@ h1 {
 
 p {
     margin-bottom: 20px;
+    text-align: start;
+    margin-right: 40px;
 }
 
 .container {
@@ -52,7 +54,7 @@ p {
     font-size: 12px;
     text-anchor: middle;
     fill: white;
-    pointer-events: none; /* Prevents the text from being clickable or focusable */
+    pointer-events: none;
 }
 
 .cards-container {
@@ -85,11 +87,12 @@ p {
 
 .crosshair-x,
 .crosshair-y {
-    pointer-events: none; /* Prevents the lines from interfering with mouse events */
+    pointer-events: none;
 }
+
 .sidebar {
     background-color: #f8f9fa;
-    width: 200px;
+    width: 120px;
     height: 100%;
     position: fixed;
     left: 0;
@@ -115,9 +118,18 @@ p {
 }
 
 .banner {
-    /* The image used */
-    background-image:
-            url("https://images.unsplash.com/photo-1587731556938-38755b4803a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80");
+    background-image: url("https://images.unsplash.com/photo-1587731556938-38755b4803a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80");
     height: 400px;
     color: white;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.display-1, .display-4 {
+    text-align: center;
 }

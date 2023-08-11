@@ -39,9 +39,49 @@
         <li><a href="tree_map.html">Tree Map</a></li>
     </ul>
 </nav>
-<div>
+<div class="container">
     <h1>Scatter Plot - Album Price vs. Release Date</h1>
+    <div id="scatter-plot-container"></div>
+    <table class="table mt-5">
+        <thead>
+        <tr>
+            <th>Year</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody id="table-data"></tbody>
+    </table>
+
 </div>
+<footer class="footer">
+    <div class="container text-center row">
+        <p>
+            Name: Oscar Acelas<br>
+            Email: oacelasupegui4062@conestogac.on.ca<br>
+            Assignment: Data Visualization Project<br>
+            Date: August 10, 2023
+        </p>
+        <p>
+            Name: Kaitlin Batkam<br>
+            Email: kbatkambouopda2719@conestogac.on.ca<br>
+            Assignment: Data Visualization Project<br>
+            Date: August 10, 2023
+        </p>
+    </div>
+</footer>
+<script src="components/Chart.js"></script>
+<script src="components/ScatterPlot.js"></script>
+<script>
+    function createScatterPlot(albums) {
+        const chart = new ScatterPlot(albums);
+        chart.createScatterPlot();
+        chart.createSummaryTable();
+    }
+
+    // Load data from the JSON file and call the createPieChart function
+    d3.json('albums.json').then(createScatterPlot);
+
+</script>
 </body>
 </html>
 

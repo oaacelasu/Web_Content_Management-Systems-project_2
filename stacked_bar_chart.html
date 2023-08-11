@@ -39,9 +39,50 @@
         <li><a href="tree_map.html">Tree Map</a></li>
     </ul>
 </nav>
-<div>
+<div class="container">
     <h1>Stacked Bar Chart - Top Albums Count by Release Date</h1>
+
+    <div id="bar-chart-container"></div>
+    <table class="table mt-5">
+        <thead>
+        <tr>
+            <th>Year</th>
+            <th>Count</th>
+        </tr>
+        </thead>
+        <tbody id="table-data"></tbody>
+    </table>
+
 </div>
+<footer class="footer">
+    <div class="container text-center row">
+        <p>
+            Name: Oscar Acelas<br>
+            Email: oacelasupegui4062@conestogac.on.ca<br>
+            Assignment: Data Visualization Project<br>
+            Date: August 10, 2023
+        </p>
+        <p>
+            Name: Kaitlin Batkam<br>
+            Email: kbatkambouopda2719@conestogac.on.ca<br>
+            Assignment: Data Visualization Project<br>
+            Date: August 10, 2023
+        </p>
+    </div>
+</footer>
+<script src="components/Chart.js"></script>
+<script src="components/StackedBarChart.js"></script>
+<script>
+    function createStackedBarChart(albums) {
+        const chart = new StackedBarChart(albums);
+        chart.createStackedBarChart();
+        chart.createSummaryTable();
+    }
+
+    // Load data from the JSON file and call the createPieChart function
+    d3.json('albums.json').then(createStackedBarChart);
+
+</script>
 </body>
 </html>
 
